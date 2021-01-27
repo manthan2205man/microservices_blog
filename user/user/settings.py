@@ -77,14 +77,25 @@ WSGI_APPLICATION = 'user.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd117jtovucdsnm',
+#         'USER': 'exthorhdgghhvk',
+#         'PASSWORD': '0009c90388fbb85a62e851762b975407f867693d303203fcacf56c225ebfbd7a',
+#         'HOST': 'ec2-3-215-76-208.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd117jtovucdsnm',
-        'USER': 'exthorhdgghhvk',
-        'PASSWORD': '0009c90388fbb85a62e851762b975407f867693d303203fcacf56c225ebfbd7a',
-        'HOST': 'ec2-3-215-76-208.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'user',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'db_user',
+        'PORT': '3306',
     }
 }
 
@@ -131,5 +142,5 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 AUTH_USER_MODEL = 'blog_user.User'
 
-import dj_database_url
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# import dj_database_url
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
