@@ -5,7 +5,7 @@ import json
 
 class BlogAppProducer(object):
     def __init__(self):
-        self.params=pika.URLParameters('amqps://ziborigv:EGUW7o28G5N_Jj80_6cIYrAjyb8ucDwV@lionfish.rmq.cloudamqp.com/ziborigv')
+        self.params=pika.URLParameters('amqps://ysyrfqhq:JioBjnZXG0l-9PCDz3PZIsWuBhX-aVFb@lionfish.rmq.cloudamqp.com/ysyrfqhq')
         self.connection = pika.BlockingConnection(self.params)
 
         self.channel = self.connection.channel()
