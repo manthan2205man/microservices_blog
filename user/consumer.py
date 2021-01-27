@@ -5,7 +5,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "user.settings")
 django.setup()
 
 from blog_user.models import User, Token
-params=pika.URLParameters('amqps://ziborigv:EGUW7o28G5N_Jj80_6cIYrAjyb8ucDwV@lionfish.rmq.cloudamqp.com/ziborigv')
+params=pika.URLParameters('amqps://ysyrfqhq:JioBjnZXG0l-9PCDz3PZIsWuBhX-aVFb@lionfish.rmq.cloudamqp.com/ysyrfqhq')
 
 connection=pika.BlockingConnection(params)
 
